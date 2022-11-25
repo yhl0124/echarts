@@ -5,13 +5,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
+    <title>echarts可视化</title>
+    <link rel="stylesheet" href="./css/index.css">
     <script src=""></script>
 </head>
 
 <body>
-<h1>你好</h1>
+    <!-- 页面整体的盒子 -->
+<div class="viewport">
+    <!-- 左边部分 -->
+    <div class="column">
+    <!-- 概览部分 -->
+    <div class="overview  panel">
+        <div class="inner">
+            <ul>
+                <li>
+                    <h4>2190</h4>
+                    <span>
+                        <i class="line" style="background-color: #2d6af6 ;"></i>
+                  设备总数
+                    </span>
+                </li>
+                <li>
+                    <h4>2190</h4>
+                    <span>
+                        <i class="line" style="background-color: #83caa6;"></i>
+                        设备总数
+                    </span>
+                </li>
+                <li>
+                    <h4>2190</h4>
+                    <span>
+                        <i class="line" style="background-color: #83caa6 ;"></i>
+                        设备总数
+                    </span>
+                </li>
+                <li>
+                    <h4>2190</h4>
+                    <span>
+                        <i class="line" style="background-color: #db4e3f;"></i>
+                        设备总数
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+
+    
+    </div>  
+      <!-- 故障设备监控 -->
+        <div class="panel monitoring">
+            <div class="inner">
+                <div class="tabs">
+          <a href="###" class="choseTab active">故障设备监控</a>
+          <span class="line"></span>
+          <a href="###" class="choseTab">异常设备监控</a>
+                </div>
+        <div class="showTab">
+                <div class="row top">
+                    <span class="col">故障时间</span>
+                    <span class="col">设备地址</span>
+                    <span class="col">故障代码</span>
+                </div>
+                <ul id="ul"> 
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="showTab" style="display: none;">
+                <div class="row top">
+                    <span class="col">异常时间</span>
+                    <span class="col">异常设备地址</span>
+                    <span class="col">异常代码</span>
+                </div>
+                <ul id="ul"> 
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                    <li>
+                        <span class="col">YC20229527</span>
+                        <span class="col">xx市xx区CBD富国大厦</span>
+                        <span class="col">1000001</span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+</div> 
+ <!-- 中间部分 -->
+    <div class="column">
+
+    </div>
+
+    <!-- 右边部分 -->
+    <div class="column">
+
+    </div>
+</div>
 </body>
 
 </html>
+
+<!-- 引入rem适配js -->
+<script src="./js/setRem.js"></script>
+
+
+<!-- 引入故障设别监控和异常设被监控的js -->
+<script src="./js/index.js"></script>
