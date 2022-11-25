@@ -6,7 +6,6 @@ body{
     background: url(./../images/bg.jpg) no-repeat;
     background-size: cover;
 }
-
 /* 修改默认样式 */
 ul{
     list-style: none;
@@ -25,15 +24,15 @@ a{
     background-size: contain;
     display: flex;
 }
-.viewport>.column{
-    flex: 3;
-    background-color: pink;
+.viewport> .column{
+  flex: 3;
 }
-.viewport>.column:nth-of-type(2){
+.viewport> .column:nth-of-type(2){
     flex: 4;
     margin: .375rem .1875rem 0;
+     display: flex;
+     flex-direction: column;
 }
-
 /* 共样式  图片的边框 */
 .panel{
     border: 1px solid transparent;
@@ -60,7 +59,7 @@ a{
     padding: 0.225rem 0.325rem;
 }
 .panel h3{
-    font-size: .225rem;
+    font-size: .2rem;
     color: white;
     font-weight: 400;
 }
@@ -69,7 +68,6 @@ a{
 .overview{
     height: 1.15rem;
     box-sizing: border-box;
-    background-color: pink;
 }
 .overview ul{
     display: flex;
@@ -92,7 +90,7 @@ a{
     color: #4c9bfd;
 }
 .monitoring{
-    height: 4rem;
+    height: 5rem;
     padding: .125rem;
     box-sizing: border-box;
 }
@@ -178,6 +176,276 @@ flex: 1;
     flex: 1;
 }
 
+/* 点位分布统计 */
+.point{
+  height: 2.3rem;
+}
+ .chart{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .0625rem;
+}
+/* 饼图 */
+.chart .pie{
+    flex: 4;
+    height: 2.4rem;
+    background-color: red;
+}
+.chart .right{
+  flex: 1.5;
+height: 2.2rem;
+background: url(./../images/rect.png) no-repeat;
+background-size: 100% 100%;
+padding: .5rem .3rem; 
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+  h4{
+font-size: .225rem;
+color: #fff;
+font-weight: 400;
+}
+ .chart span{
+    display:block;
+    color: #f8ab05;
+    font-size: 0.175rem;
+}
+.right .top{
+    flex: 1; 
+}
+
+.right .bottom{
+    flex: 1;
+    margin-top: .25rem;
+}
+/* 中间部分 */
+/*  上半部分 标题 */
+ .map{
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.map h3{
+    font-size: .2rem;
+    color: white;
+    font-weight: 400;
+    padding: .2rem  0 ;
+    box-sizing: border-box;
+}
+.map .img{
+    background: url(./../images/shebei.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: .25rem;
+    height: .25rem;
+    vertical-align: middle;
+}
+.map .geo{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.05);
+    background-color: red;
+}
+.user{
+    height: 2.3rem;
+    margin-top: .25rem;
+    display: flex;
+}
+/* 柱状图 */
+.user .bar{
+    flex: 7;
+    height: 2.4rem;
+    background-color: red;
+}
+.user span{
+    display: block;
+    color: #4cfde2;;
+    font-size: 0.175rem;
+}
+
+/* 右边部分 */
+.order{
+    height: .6rem;
+}
+.filter {
+    font-size: 0.2rem;
+    display: flex;
+}
+.filter a {
+    padding: 0 .1875rem 0 .1875rem;
+    border-right:2px solid  #00f2f1;
+    margin-bottom: .125rem;
+    box-sizing: border-box;
+    color: #1950c4;
+}
+.filter .active{
+    color: white;
+}
+.filter a:nth-of-type(1){
+    padding-left: 0px;
+}
+.filter a:nth-of-type(4){
+    border: none;
+}
+ .orderDataHidden{
+    display: none !important;
+}
+
+.order .data{
+    display: flex;
+}
+.left{
+    flex: 1;
+}
+.data h4{
+    font-size: .275rem;
+}
+.right{
+    flex: 1;
+}
+.data span{
+    display: block;
+    font-size: .1625rem;
+    color: #61a8ff;
+}
+
+/* 销售额统计部分 */
+.seles{
+    height: 1.8rem;
+}
+.seles .inner {
+    display: flex;
+    flex-direction: column;
+}
+.caption{
+    display: flex;
+}
+.caption h3{
+    height: 0.225rem;
+    padding-right: .1875rem;
+    box-sizing: border-box;
+    border-right: .025rem solid #00f2f1;
+   line-height: .225rem;
+}
+.caption a {
+    font-size: 0.175rem;
+    padding: .0375rem;
+    background-color: #1950c4;
+    margin: -0.0375rem 0 0 0.2625rem;
+    border-radius: .0625rem;
+    color: #61a8ff;
+}
+.seles  .sline{
+    flex: 1;
+    padding-top: 0.125rem;
+    position: relative;
+    background-color: red;
+}
+.chart .label{
+    font-size: .1875rem;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+/* 渠道 季度 */
+
+.wrap{
+    display: flex;
+}
+.wrap .channel{
+    flex: 8;
+    height: 1.7rem;
+    margin-right: .125rem;
+    
+}
+.channel .radar{
+    background-color: red;
+    height: 1.8rem;
+}
+.wrap .quarter{
+    flex: 2;
+    height: 1.7rem;
+    display: flex;
+    flex-direction: column;
+}
+.quarter .inner{
+    display: flex;
+    flex-direction: column;
+}
+.quarter h3{
+    flex: 1;
+}
+.quarter .small{
+    flex: 2;
+    color: #fff;
+    font-size: 0.375rem;
+    text-align: center;
+    line-height: .8125rem;
+}
+.quarter .right{
+    flex: 2;
+    display: flex;
+
+}
+.quarter span{
+    display:block;
+    color: #4cfde2;
+    font-size: .1625rem;
+    margin-top: .125rem;
+}
+.quarter .right .top{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.quarter .right .bottom{
+    flex: 1;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 水滴图部分 */
+.plan{
+    height: 1.4rem;
+}
+.plan .water{
+    flex: 3;
+    height: 1.5rem;
+    background-color: red;
+
+}
+.plan .right{
+    height: 1.5rem;
+    flex: 1;
+    background: url(./../images/rect.png) no-repeat;
+background-size: 100% 100%;
+padding: .2rem .3rem; 
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+ .plan h4{
+    font-size: .225rem;
+    color: #fff;
+    font-weight: 400;
+    }
+     .plan span{
+        display:block;
+        color: #f8ab05;
+        font-size: 0.175rem;
+    }
+  .plan  .right .top{
+        flex: 1; 
+    }
+    
+   .plan .right .bottom{
+        flex: 1;
+    }
 
 
         
