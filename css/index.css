@@ -160,6 +160,13 @@ flex: 1;
    /* 动画部分 */
    animation: li linear 2s infinite;
 }
+/* 暂停动画 */
+.monitoring #ul:hover>li{
+    animation-play-state: paused;
+}
+.monitoring #ul>li:hover{
+    background-color: #4c9cfd70;;
+}
 @keyframes li{
     0%{}
     100%{
@@ -189,7 +196,6 @@ flex: 1;
 .chart .pie{
     flex: 4;
     height: 2.4rem;
-    background-color: red;
 }
 .chart .right{
   flex: 1.5;
@@ -245,7 +251,7 @@ font-weight: 400;
 .map .geo{
     flex: 1;
     background-color: rgba(255, 255, 255, 0.05);
-    background-color: red;
+    
 }
 .user{
     height: 2.3rem;
@@ -256,7 +262,7 @@ font-weight: 400;
 .user .bar{
     flex: 7;
     height: 2.4rem;
-    background-color: red;
+   
 }
 .user span{
     display: block;
@@ -313,6 +319,7 @@ font-weight: 400;
 /* 销售额统计部分 */
 .seles{
     height: 1.8rem;
+    position: relative;
 }
 .seles .inner {
     display: flex;
@@ -328,25 +335,29 @@ font-weight: 400;
     border-right: .025rem solid #00f2f1;
    line-height: .225rem;
 }
+
 .caption a {
     font-size: 0.175rem;
-    padding: .0375rem;
-    background-color: #1950c4;
     margin: -0.0375rem 0 0 0.2625rem;
-    border-radius: .0625rem;
     color: #61a8ff;
+}
+.caption .active{
+    padding: .0125rem  .0375rem;
+     background-color: #0bace6; 
+     border-radius: .0625rem;
+     color: white;
+     box-sizing: border-box;
 }
 .seles  .sline{
     flex: 1;
     padding-top: 0.125rem;
-    position: relative;
-    background-color: red;
 }
-.chart .label{
-    font-size: .1875rem;
+.seles .label{
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: .5rem;
+    top: .6rem;
+    font-size: .1875rem;
+    color: #61a8ff;
 }
 /* 渠道 季度 */
 
@@ -360,7 +371,6 @@ font-weight: 400;
     
 }
 .channel .radar{
-    background-color: red;
     height: 1.8rem;
 }
 .wrap .quarter{
@@ -372,6 +382,7 @@ font-weight: 400;
 .quarter .inner{
     display: flex;
     flex-direction: column;
+    padding: .125rem .1875rem;
 }
 .quarter h3{
     flex: 1;
@@ -414,7 +425,7 @@ font-weight: 400;
 .plan .water{
     flex: 3;
     height: 1.5rem;
-    background-color: red;
+  
 
 }
 .plan .right{
@@ -422,7 +433,7 @@ font-weight: 400;
     flex: 1;
     background: url(./../images/rect.png) no-repeat;
 background-size: 100% 100%;
-padding: .2rem .3rem; 
+padding: .2rem .25rem; 
 box-sizing: border-box;
 display: flex;
 flex-direction: column;
@@ -445,6 +456,7 @@ justify-content: space-between;
     
    .plan .right .bottom{
         flex: 1;
+        margin-top: .1rem;
     }
 
 

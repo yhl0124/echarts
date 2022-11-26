@@ -366,15 +366,17 @@
     <div class="inner">
         <div class="caption">
     <h3>销售额统计</h3>
-    <a href="#"  data-time="year">年</a>
-    <a href="#"  data-time="quarter">季</a>
-    <a href="#"  data-time="month">月</a>
-    <a href="#"  data-time="week">周</a>
+    <a href="###"  data-time="year" class="Tab active" >年</a>
+    <a href="###"  data-time="quarter" class="Tab" >季</a>
+    <a href="###"  data-time="month"  class="Tab" >月</a>
+    <a href="###"  data-time="week"  class="Tab" >周</a>
         </div>
+        
         <!-- 折线图 -->
         <div class="sline">
-            <!-- <div class="label">单位:万</div> -->
-        </div>
+           
+        </div> 
+        <div class="label">单位:万</div>
     </div>
 </div>
   <!-- 渠道 季度 -->
@@ -425,14 +427,14 @@
         </div>
         <div class="right">
             <div class="top">
-           <h4>800,0</h4>
+           <h4>800,0万</h4>
            <span>
               <i class="line" style="background-color: #ed3f35"></i>
               计划收入
             </span>
             </div>
                <div class="bottom">
-              <h4>544,0</h4>
+              <h4>544,0万</h4>
               <span>
                   <i class="line" style="background-color: #eacf19"></i>
                   完成收入
@@ -447,22 +449,29 @@
 </body>
 
 </html>
-<script src="./js/index.js"></script>
-
-
-<!-- 引入eacharts脚本 -->
+<!-- 引入echarts脚本 -->
 <script src="./js/echarts.js"></script>
 
 <!-- 引入rem适配js -->
 <script src="./js/setRem.js"></script>
 
 
+<!-- 引入水纹图的扩展脚本 -->
+<script src="./js/echarts-liquidfill.min.js"></script>
 <!-- 引入水纹图js -->
-<!-- <script src="./js/water.js"></script>
-<script src="./js/echarts-liquidfill.min.js"></script> -->
+<script src="./js/water.js"></script>
 
 
-<!-- 引入地图js -->
-<!-- <script src="./js/geo.js"></script>  -->
+
+
 <!-- 引入地图的扩展脚本 -->
- <!-- <script src="./js/china.js"></script> -->
+<script src="./js/china.js"></script>
+<!-- 引入地图js -->
+<script src="./js/geo.js"></script> 
+
+ 
+
+
+
+
+<script src="./js/index.js"></script>

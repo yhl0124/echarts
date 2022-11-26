@@ -1,14 +1,14 @@
 // 水纹图
 
 var myChart=echarts.init(document.getElementsByClassName('water')[0])
-let compositeScore = 0.68;
+let compositeScore = 0.78;
 
 var  option = {
    graphic: [
       {
          type: "group",
          left: "center",
-         top: "50%",
+         top: "60%",
          children: [
             {
                type: "text",
@@ -27,10 +27,10 @@ var  option = {
    series: [
       {
          type: "liquidFill", //水位图
-         radius: "50%", //显示比例
+         radius: "90%", //显示比例
          center: ["50%", "50%"], //中心点
          data: [compositeScore], // data个数代表波浪数
-         color: ["rgba(56, 194, 198, 0.5)"], //波浪颜色
+         color: ["#86daec"], //波浪颜色
          backgroundStyle: {
             color: {
                type: "linearGradient",
@@ -58,7 +58,7 @@ var  option = {
          label: {
             //标签设置
             position: ["50%", "50%"],
-            formatter: compositeScore * 100 + "分", //显示文本
+            formatter: compositeScore * 100 + "%", //显示文本
             fontSize: "30px",
             fontFamily: "DINAlternate-Bold",
             fontWeight: "bold",
